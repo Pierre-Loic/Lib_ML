@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 import plb_data_lib
 
+
 def test_missing_normal(capfd):
     df = pd.DataFrame([[4, 2], [2, 5]], columns=["colonne_1", "colonne_2"])
     plb_data_lib.missing_data(df)
